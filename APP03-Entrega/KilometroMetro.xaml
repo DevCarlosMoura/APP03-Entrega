@@ -22,5 +22,9 @@
             Clicked="ConverterKmparaMetros"/>
         <Entry
             x:Name="etrconverter"/>
+        <Button
+            x:Name="btnLimpeza"
+            Clicked="ClickOnLimpeza"
+            Text="Limpar"/>
     </VerticalStackLayout>
 </ContentPage>

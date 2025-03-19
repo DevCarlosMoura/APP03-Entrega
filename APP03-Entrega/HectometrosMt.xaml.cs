@@ -1,23 +1,23 @@
-using Intents;
+
 
 namespace APP03_Entrega;
 
 public partial class HectometrosMt : ContentPage
 {
-	public HectometrosMt()
-	{
-		InitializeComponent();
-	}
-	private void ConverterHecparaMetros(object sender, EventArgs e)
-	{
-		if (double.TryParse(etrconverter3.Text, out double valor))
-		{
-			double resultado = valor * 100;
-			etrconverter3.Text = $"{valor}Hectometros = {resultado} Metros";
-		}
-		else
-		{
-			etrconverter3.Text = "Insira um valor";
-		}
-	}
+    public HectometrosMt()
+    {
+        InitializeComponent();
+    }
+    private void ConverterHecparaMetros(object sender, EventArgs e)
+    {
+        int Hec;
+
+        Hec = int.Parse(etrHec.Text) * 100;
+        etrconverter3.Text = Hec.ToString();
+    }
+    private void ClickOnLimpeza(object sender, EventArgs e)
+    {
+        etrconverter3.Text = "";
+        etrHec.Text = "";
+    }
 }

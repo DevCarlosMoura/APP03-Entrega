@@ -22,5 +22,9 @@
             Clicked="ConverterMtparaCentimetros"/>
         <Entry
             x:Name="etrconverter2"/>
+        <Button
+            x:Name="btnLimpeza"
+            Clicked="ClickOnLimpeza"
+            Text="Limpar"/>
     </VerticalStackLayout>
 </ContentPage>

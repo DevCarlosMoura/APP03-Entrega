@@ -9,7 +9,8 @@
             Spacing="25">
             <Image
                 Source="dotnet_bot.png"
-                HeightRequest="110"/>
+                HeightRequest="100"
+                WidthRequest="100"/>
 
             <Label
                 Text="Seja Bem-Vindo(a)"
@@ -23,9 +24,17 @@
                 SemanticProperties.Description="Aplicacao com intuito de converter medidas feito em .NET maui" />
 
             <Label
+                x:Name="lblHec"
+                Text="Hectometro sendo Convertido para Metros"/>
+            
+            <Label
                 x:Name="lblKm"
                 Text="Kilometros sendo Convertido para Metros"/>
-            
+
+            <Label
+                x:Name="lblMt"
+                Text="Metros sendo Convertido para Centimetros"/>
+
         </VerticalStackLayout>
     </ScrollView>
 

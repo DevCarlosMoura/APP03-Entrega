@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:APP03_Entrega"
     Shell.FlyoutBehavior="Flyout"
+    Shell.TabBarIsVisible="False"
     Title="APP03_Entrega">
     <Shell.FlyoutHeader>
         <VerticalStackLayout>
@@ -16,22 +17,22 @@
 
     <FlyoutItem
         Title="Menu Principal"
-        FlyoutDisplayOptions="AsMultipleItems"
+        FlyoutDisplayOptions="AsMultipleItems">
 
-    <ShellContent
+        <ShellContent
         Title="Km >Mt"
-        ContentTemplate="{DataTemplate local:Kilometros}"
-        Route="Kilometro"/>
+        ContentTemplate="{DataTemplate local:KilometroMetro}"
+        Route="KilometroMetro"/>
 
     <ShellContent
         Title="Hec > Mt"
         ContentTemplate="{DataTemplate local:HectometrosMt}"
-        Route="Hectometros"/>
+        Route="HectometrosMt"/>
 
     <ShellContent
         Title="Mt > Cm"
         ContentTemplate="{DataTemplate local:MetrosCentimetros}"
-        Route="Metros"/>
+        Route="MetrosCentimetros"/>
 
     <ShellContent
         Title="Sobre"

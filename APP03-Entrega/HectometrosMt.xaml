@@ -20,5 +20,9 @@
             Clicked="ConverterHecparaMetros"/>
         <Entry
             x:Name="etrconverter3"/>
+        <Button
+            x:Name="btnLimpar"
+            Clicked="ClickOnLimpeza"
+            Text="Limpar"/>
     </VerticalStackLayout>
 </ContentPage>
