@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP03_Entrega.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="110"/>
+
+            <Label
+                Text="Seja Bem-Vindo(a)"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Esta e uma aplicacao com intuito de converter unidades de medidas."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Aplicacao com intuito de converter medidas feito em .NET maui" />
+
+            <Label
+                x:Name="lblKm"
+                Text="Kilometros sendo Convertido para Metros"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

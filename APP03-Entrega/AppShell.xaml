@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="APP03_Entrega.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:APP03_Entrega"
+    Shell.FlyoutBehavior="Flyout"
+    Title="APP03_Entrega">
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+            <Label
+                Text="Menu Inicial"
+                HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem
+        Title="Menu Principal"
+        FlyoutDisplayOptions="AsMultipleItems"
+
+    <ShellContent
+        Title="Km >Mt"
+        ContentTemplate="{DataTemplate local:Kilometros}"
+        Route="Kilometro"/>
+
+    <ShellContent
+        Title="Hec > Mt"
+        ContentTemplate="{DataTemplate local:HectometrosMt}"
+        Route="Hectometros"/>
+
+    <ShellContent
+        Title="Mt > Cm"
+        ContentTemplate="{DataTemplate local:MetrosCentimetros}"
+        Route="Metros"/>
+
+    <ShellContent
+        Title="Sobre"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"/>
+    </FlyoutItem>
+</Shell>

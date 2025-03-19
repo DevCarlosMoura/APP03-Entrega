@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP03_Entrega.MetrosCentimetros"
+             Title="MetrosCentimetros">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="25">
+        <Label 
+            Text="Converso de Mt em Centimetros"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="Empty"/>
+        <Label
+            x:Name="lblMt"
+            Text="Digite os Metros"/>
+        <Entry
+            x:Name="etrMt"/>
+        <Button
+            x:Name="btnMetros"
+            Text="Conversao de Mt"
+            Clicked="ConverterMtparaCentimetros"/>
+        <Entry
+            x:Name="etrconverter2"/>
+    </VerticalStackLayout>
+</ContentPage>
